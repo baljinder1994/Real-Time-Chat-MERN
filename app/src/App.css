@@ -1,0 +1,296 @@
+.home-container{
+    display:flex;
+    height:100vh;
+}
+
+.sidebar{
+    width:30%;
+    background-color: #4b4a67;
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+    height:100vh;
+    overflow-y: auto;
+}
+.user-list{
+    list-style:none;
+    padding:0;
+    width:100%;
+}
+.user-item{
+ display:flex;
+ align-items: center;
+ padding:10px;
+ cursor: pointer;
+ width:100%;
+}
+.user-item:hover{
+    background-color: #6c63ff;
+
+}
+.user-image{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    margin-right:10px;
+}
+.user-username{
+    font-size: 1.2em;
+}
+
+.content{
+    width:70%;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    height:100vh;
+    position: relative;
+}
+
+.profile-section{
+    display:flex;
+    align-items: center;
+    margin-bottom:20px;
+}
+.profile-image{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.chat-container{
+    width:100%;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    height:calc(100% - 80px)
+}
+
+.messages{
+    flex-grow:1;
+    overflow-y: auto;
+    padding-right:10px
+}
+.message{
+    display:flex;
+    align-items: center;
+    margin-bottom: 10px;
+    max-width:70%;
+    position:relative
+}
+.message p{
+    padding:10px;
+    border-radius: 20px;
+    word-wrap:break-word;
+    margin:0;
+}
+.message.sent{
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+.message.sent p{
+    background-color: #6c63ff;
+    color:#fff;
+    border-top-right-radius:0
+}
+.message.received{
+    align-self:flex-start
+}
+.message.received p{
+    background-color: #e4e4e4;
+    border-top-left-radius:0
+}
+.message img{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    margin:0 10px
+}
+.timestamp{
+    font-size: 0.75em;
+    color:#888;
+    margin-top:5px
+}
+.message-input{
+    display:flex;
+    padding:10px;
+    background-color: #fff;
+    border-top:1px solid #ddd;
+    position:sticky;
+    bottom:0;
+}
+.message-input input{
+    flex-grow:1;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline:none
+}
+
+.message-input button{
+    padding:10px;
+    border:none;
+    background-color: #6c63ff;
+    cursor: pointer;
+}
+
+.no-chat{
+    font-size: 1.2em;
+    color:#888
+}
+.logout-button{
+    background-color: #dc3545;
+    color:#fff;
+    border:none;
+    padding:10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+.logout-button:hover{
+    background-color: #c82333;
+}
+/* Login.css */
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .login-form {
+    background: rgba(255, 255, 255, 0.85); /* Slightly opaque white */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .login-button {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  .login-button:focus {
+    outline: none;
+  }
+  /* Register.css */
+  
+  
+  .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .register-form {
+    background: rgba(255, 255, 255, 0.85); /* Slightly opaque white */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .register-form h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="password"],
+  .form-group input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .register-button {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .register-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  .register-button:focus {
+    outline: none;
+  }
